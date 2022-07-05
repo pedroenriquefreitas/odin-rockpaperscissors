@@ -36,4 +36,11 @@ function game(){
      }
 }
 
-game();
+//game();
+
+const btns = document.querySelectorAll('button');
+console.log(btns);
+
+btns.forEach(function(event){
+    event.addEventListener("click", (a) => console.log(a.target.innerText));
+});
