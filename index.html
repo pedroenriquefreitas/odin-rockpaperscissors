@@ -10,9 +10,24 @@
 </head>
 <body>
     <div class="options-section">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+        <div class="top-section">
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissors</button>
+        </div>
+        <div class="bottom-section">
+            <div class="popup" id="popup">
+                <h2 class="popup-title">Congratulations!</h2>
+                <p>You have successfully finished the game</p>
+                <button type="button" onclick="closePopup()">Play Again</button>
+            </div>
+            <div class="player-play"><span style="font-weight: bold">Your Play: </span><span class="user-input"></span></div>
+            <div class="computer-play"><span style="font-weight: bold">Computer Play: </span><span class="computer-input"></span></div>
+            <div class="results-section"></div>
+            <div class="score-section">
+                <span style="font-weight: bold">You </span><span class="points-tv">0 vs 0</span><span style="font-weight: bold"> Computer</span>
+            </div>
+        </div>
     </div>
 </body>
 </html>
